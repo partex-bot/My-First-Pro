@@ -18,6 +18,6 @@ def digital_clock():
    time_live = time.strftime("%H:%M:%S")
    label.config(text=time_live)
    label.after(200, digital_clock)
-
-digital_clock()
-app_window.mainloop()
+if __name__ == "__main__":
+    digital_clock()
+    app_window.mainloop()
